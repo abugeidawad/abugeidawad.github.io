@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awad Password Generator</title>
+
+    
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="vendors/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="vendors/style.css" rel="stylesheet">
+
+  </head/>
+
+  <body>
+    <h1 class="text-center p-3" style = "color :black" >Awad Password Generator</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <h4>Passwords</h4><hr height="20">
+
+          <div class="form-group output1">
+            <label for="password_length">Enter Password Length</label>
+            <input id="password_length" value="12" type="number" class="form-control">
+          </div>
+          
+          <div class="form-group output1">
+            <label class="text-muted">randam password from whole character-set</label>
+            <div class="input-group">
+              <input type="text" class="form-control" rel="gp" data-size="32" data-character-set="a-z,A-Z,0-9,#" readonly
+            >
+              <span class="input-group-btn"><button type="button" class="btn btn-success getNewPass"><span class="fa fa-refresh"></span></button></span>
+            </div>
+          </div>
+          
+          <div class="form-group output2">
+            <label class="text-muted">Using both the a-z and A-Z character sets:</label>
+            <div class="input-group">
+              <input type="text" readonly class="form-control" rel="gp" data-size="32" data-character-set="a-z,A-Z">
+              <span class="input-group-btn"><button type="button" class="btn btn-success getNewPass"><span class="fa fa-refresh"></span></button></span>
+            </div>
+          </div>
+          
+          <div class="form-group output3">
+            <label class="text-muted">Using only the A-Z character set:</label>
+            <div class="input-group">
+              <input type="text" readonly class="form-control" rel="gp" data-size="20" data-character-set="A-Z">
+              <span class="input-group-btn"><button type="button" class="btn btn-success getNewPass"><span class="fa fa-refresh"></span></button></span>
+            </div>
+          </div>
+          
+          <div class="form-group output4">
+            <label class="text-muted">Using only the a-z character set:</label>
+            <div class="input-group">
+              <input type="text" readonly class="form-control" rel="gp" data-size="32" data-character-set="a-z">
+              <span class="input-group-btn"><button type="button" class="btn btn-success getNewPass"><span class="fa fa-refresh"></span></button></span>
+            </div>
+          </div>
+          
+          <div class="form-group output5">
+            <label class="text-muted">Using only the number character set:</label>
+            <div class="input-group">
+              <input type="text" readonly class="form-control" rel="gp" data-size="12" data-character-set="0-9">
+              <span class="input-group-btn"><button type="button" class="btn btn-success getNewPass"><span class="fa fa-refresh"></span></button></span>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+
+      
+    var length= prompt("How long do you want the password to be?");
+    document.getElementById("password_length").value=length;
+      
+      
+      </script>
+
+<script src="vendors/jquery.min.js"></script> 
+
+<script src="vendors/style.js"></script>
+
+
+  </body>
+</html>
